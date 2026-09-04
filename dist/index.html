@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
-  <script src="./converter.js" defer></script>
 </head>
 <body>
   <header class="nav">
@@ -44,32 +43,16 @@
         <div class="project-number">01</div>
         <div class="project-copy">
           <p class="project-type">MACHINE LEARNING · COMPUTER VISION</p>
-          <h3>Black &amp; white to color</h3>
-          <p>A browser adaptation of Isha’s KNN colorization experiment. Upload a black-and-white headshot to estimate color from luminance and spatial context. Your photo stays on your device.</p>
+          <h3>Exploring color data in 3D</h3>
+          <p>An interactive RGB sample visualization taken directly from Isha’s black-and-white colorization repository. Rotate, zoom, and inspect the training-color distribution in the browser.</p>
           <ul class="tags" aria-label="Skills used">
             <li>Python</li><li>KNN</li><li>Image processing</li>
           </ul>
-          <a class="source-link" href="https://github.com/ishasingh2893/BWtoColorConverter" target="_blank" rel="noopener noreferrer">View original code ↗</a>
+          <a class="source-link" href="https://github.com/ishasingh2893/BWtoColorConverter" target="_blank" rel="noopener noreferrer">View repository ↗</a>
         </div>
-        <div class="converter-card" id="converter">
-          <div class="drop-zone" id="drop-zone">
-            <input id="photo-input" type="file" accept="image/jpeg,image/png,image/webp" hidden>
-            <div class="upload-icon" aria-hidden="true">＋</div>
-            <p><strong>Choose a B&amp;W headshot</strong></p>
-            <p class="upload-note">JPEG, PNG or WebP · processed locally</p>
-            <button class="upload-button" id="upload-button" type="button">Upload photo</button>
-          </div>
-          <div class="converter-result" id="converter-result" hidden>
-            <div class="image-pair">
-              <figure><canvas id="before-canvas"></canvas><figcaption>Original</figcaption></figure>
-              <figure><canvas id="after-canvas"></canvas><figcaption>Colorized</figcaption></figure>
-            </div>
-            <div class="converter-actions">
-              <button class="secondary-button" id="try-another" type="button">Try another</button>
-              <button class="download-button" id="download-result" type="button">Download PNG</button>
-            </div>
-          </div>
-          <p class="converter-status" id="converter-status" role="status" aria-live="polite"></p>
+        <div class="visualization-card">
+          <iframe src="./rgb_sample_scatter.html" title="Interactive 3D RGB sample scatter plot from Isha's colorization project" loading="lazy"></iframe>
+          <p>Original browser visualization from the GitHub project · drag to rotate, scroll to zoom</p>
         </div>
       </article>
 
@@ -118,6 +101,23 @@
           <svg viewBox="0 0 300 180" aria-hidden="true"><path d="M16 145 C65 132, 91 82, 133 102 S213 58, 285 30"/></svg>
         </div>
       </article>
+
+      <div class="github-shelf" aria-labelledby="github-title">
+        <div>
+          <p class="eyebrow">GITHUB PROJECTS</p>
+          <h3 id="github-title">More experiments and analysis.</h3>
+          <p>Selected repositories spanning applied machine learning, exploratory analysis, and Python fundamentals.</p>
+        </div>
+        <div class="repo-links">
+          <a href="https://github.com/ishasingh2893/photo-compression" target="_blank" rel="noopener noreferrer"><strong>Photo compression</strong><span>PCA · image processing ↗</span></a>
+          <a href="https://github.com/ishasingh2893/Medical-Insurance-Charges_Linear-Regression" target="_blank" rel="noopener noreferrer"><strong>Medical insurance charges</strong><span>Linear regression · notebooks ↗</span></a>
+          <a href="https://github.com/ishasingh2893/Weather-Data-Analysis" target="_blank" rel="noopener noreferrer"><strong>Weather data analysis</strong><span>Exploratory analysis · notebooks ↗</span></a>
+          <a href="https://github.com/ishasingh2893/US-Accidents-2016-2020-" target="_blank" rel="noopener noreferrer"><strong>US accidents</strong><span>Data analysis · visualization ↗</span></a>
+          <a href="https://github.com/ishasingh2893/AirBnB-Data" target="_blank" rel="noopener noreferrer"><strong>Airbnb data</strong><span>Cleaning · analysis ↗</span></a>
+          <a href="https://github.com/ishasingh2893/Sales-Data-Analysis" target="_blank" rel="noopener noreferrer"><strong>Sales data analysis</strong><span>Python · business insights ↗</span></a>
+        </div>
+        <a class="all-code-link" href="https://github.com/ishasingh2893?tab=repositories" target="_blank" rel="noopener noreferrer">See all 10 repositories on GitHub ↗</a>
+      </div>
     </section>
 
     <section class="about" id="about" aria-labelledby="about-title">
