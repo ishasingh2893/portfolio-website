@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
+  <script src="./converter.js" defer></script>
 </head>
 <body>
   <header class="nav">
@@ -30,7 +31,7 @@
       <figure class="hero-portrait">
         <img src="./isha-portrait.png" alt="Portrait of Isha" width="800" height="800">
       </figure>
-      <div class="hero-note" aria-hidden="true"><span>01</span><i></i><span>03</span></div>
+      <div class="hero-note" aria-hidden="true"><span>01</span><i></i><span>04</span></div>
     </section>
 
     <section class="work" id="work" aria-labelledby="work-title">
@@ -39,8 +40,41 @@
         <h2 id="work-title">Projects shaped by curiosity,<br>clarity, and care.</h2>
       </div>
 
-      <article class="project featured">
+      <article class="project converter-project featured">
         <div class="project-number">01</div>
+        <div class="project-copy">
+          <p class="project-type">MACHINE LEARNING · COMPUTER VISION</p>
+          <h3>Black &amp; white to color</h3>
+          <p>A browser adaptation of Isha’s KNN colorization experiment. Upload a black-and-white headshot to estimate color from luminance and spatial context. Your photo stays on your device.</p>
+          <ul class="tags" aria-label="Skills used">
+            <li>Python</li><li>KNN</li><li>Image processing</li>
+          </ul>
+          <a class="source-link" href="https://github.com/ishasingh2893/BWtoColorConverter" target="_blank" rel="noopener noreferrer">View original code ↗</a>
+        </div>
+        <div class="converter-card" id="converter">
+          <div class="drop-zone" id="drop-zone">
+            <input id="photo-input" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+            <div class="upload-icon" aria-hidden="true">＋</div>
+            <p><strong>Choose a B&amp;W headshot</strong></p>
+            <p class="upload-note">JPEG, PNG or WebP · processed locally</p>
+            <button class="upload-button" id="upload-button" type="button">Upload photo</button>
+          </div>
+          <div class="converter-result" id="converter-result" hidden>
+            <div class="image-pair">
+              <figure><canvas id="before-canvas"></canvas><figcaption>Original</figcaption></figure>
+              <figure><canvas id="after-canvas"></canvas><figcaption>Colorized</figcaption></figure>
+            </div>
+            <div class="converter-actions">
+              <button class="secondary-button" id="try-another" type="button">Try another</button>
+              <button class="download-button" id="download-result" type="button">Download PNG</button>
+            </div>
+          </div>
+          <p class="converter-status" id="converter-status" role="status" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article class="project reverse">
+        <div class="project-number">02</div>
         <div class="project-copy">
           <p class="project-type">AI QUALITY · TEAM LEADERSHIP</p>
           <h3>Improving Gemini through human feedback</h3>
@@ -54,8 +88,8 @@
         </div>
       </article>
 
-      <article class="project reverse">
-        <div class="project-number">02</div>
+      <article class="project">
+        <div class="project-number">03</div>
         <div class="project-copy">
           <p class="project-type">PUBLISHING · PROJECT MANAGEMENT</p>
           <h3>Coordinating publishing programs</h3>
@@ -69,8 +103,8 @@
         </div>
       </article>
 
-      <article class="project">
-        <div class="project-number">03</div>
+      <article class="project reverse">
+        <div class="project-number">04</div>
         <div class="project-copy">
           <p class="project-type">ANALYSIS · BUSINESS INTELLIGENCE</p>
           <h3>Making data easier to act on</h3>
