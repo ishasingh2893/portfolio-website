@@ -7,6 +7,9 @@ Source for [Isha — Selected Work](https://isha-portfolio.vishaalsudarsan.chatg
 - `dist/index.html`: complete portfolio page.
 - `dist/styles.css`: styling and responsive layouts.
 - `dist/isha-portrait.png`: original portrait.
+- `dist/secfilingsanalyzer/index.html`: stable `ishasingh.cv/secfilingsanalyzer/` entry point for the maintained Filing Notes app.
+
+The route wrapper is maintained with the portfolio source; the Filing Notes application remains in its own Sites source project and is embedded here as the stable public entry point.
 - `dist/rgb_sample_scatter.html`: interactive 3D RGB visualization and its embedded data.
 - `dist/converter.js`: additional JavaScript retained from the original source.
 - `.openai/hosting.json`: existing Sites project and static directory configuration.
