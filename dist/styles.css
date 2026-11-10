@@ -10,7 +10,7 @@
 .hero-portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:43% center}
 .hero h1{font-size:clamp(3.6rem,6.5vw,7.5rem);max-width:900px}
 .hero-note{bottom:32px}
-@media(max-width:800px){.hero{padding:72px 24px 82px;grid-template-columns:1fr;gap:48px}.hero-copy{order:1}.hero-portrait{order:2;position:relative;top:auto;right:auto;transform:none;width:calc(100% + 24px);height:auto;aspect-ratio:1.15/1;justify-self:end;border-radius:50% 0 0 50%;box-shadow:-14px 14px 0 var(--lime)}.hero h1{font-size:clamp(3.4rem,16vw,5.7rem)}}
+@media(max-width:800px){.hero{padding:72px 24px 82px;grid-template-columns:1fr;gap:48px}.hero-copy{order:1}.hero-portrait{order:2;position:relative;top:auto;right:auto;transform:none;width:min(78vw,340px);height:auto;aspect-ratio:3/4;justify-self:center;border-radius:50%;box-shadow:14px 14px 0 var(--lime)}.hero-portrait img{object-position:50% center}.hero h1{font-size:clamp(3.4rem,16vw,5.7rem)}}
 
 /* GitHub project showcase */
 .converter-project{grid-template-columns:55px minmax(260px,.72fr) minmax(480px,1.28fr)}
