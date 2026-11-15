@@ -6,7 +6,7 @@
 .mark{letter-spacing:-.035em}
 .hero{padding:clamp(64px,8vw,120px) clamp(300px,34vw,540px) 70px clamp(24px,7vw,112px);display:grid;grid-template-columns:1fr;align-items:center;align-content:center}
 .hero-copy{position:relative;z-index:1}
-.hero-portrait{margin:0;position:absolute;z-index:1;right:0;top:50%;transform:translateY(-50%);width:clamp(280px,31vw,500px);height:clamp(430px,50vw,720px);overflow:hidden;border-radius:50% 0 0 50%;box-shadow:-22px 24px 0 var(--lime)}
+.hero-portrait{margin:0;position:absolute;z-index:1;right:0;top:50%;transform:translateY(-50%);width:clamp(280px,31vw,500px);height:clamp(430px,50vw,720px);overflow:hidden;border-radius:50% 50% 0 0 / 100% 100% 0 0;box-shadow:-22px 24px 0 var(--lime)}
 .hero-portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:43% center}
 .hero h1{font-size:clamp(3.6rem,6.5vw,7.5rem);max-width:900px}
 .hero-note{bottom:32px}
