@@ -24,4 +24,15 @@ python -m http.server 8000 --directory dist
 
 Then open http://localhost:8000. Edit the HTML and CSS directly. The page loads Google Fonts, and the RGB visualization loads Plotly 3.1.0 from its CDN, so those features need an internet connection.
 
-Publishing changes to GitHub does not automatically update the existing Sites publication.
+## GitHub Pages deployment
+
+This repository is configured to publish the static site from the `dist` directory using GitHub Pages. Any push to the `main` branch triggers the workflow in `.github/workflows/deploy-pages.yml` and deploys the latest content to the `www.ishasingh.cv` custom domain.
+
+The repository also includes a `CNAME` file with the domain and a `.nojekyll` file for static hosting compatibility.
+
+To finish the live setup in GitHub:
+
+1. In the repository settings, enable GitHub Pages and select the `GitHub Actions` source.
+2. Set the custom domain to `www.ishasingh.cv`.
+3. Ensure your DNS provider points `www` to the GitHub Pages endpoint and that the GitHub Pages certificate can issue for the domain.
+4. Push commits to `main` to publish changes automatically.
