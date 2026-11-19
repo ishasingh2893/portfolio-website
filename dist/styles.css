@@ -13,14 +13,14 @@
 }
 .hero-copy{position:relative;z-index:1}
 .hero-portrait{
-  --portrait-ring:clamp(57.6px,6.72vw,96px);
+  --portrait-ring:clamp(40.32px,4.704vw,67.2px);
   margin:0;
   position:absolute;
   right:-6vw;
   top:50%;
   transform:translateY(-50%);
-  /* Photo and contour dimensions are enlarged together by 20%. */
-  width:clamp(484.5px,59.85vw,912px);
+  /* Photo and contour dimensions are reduced by 30%. */
+  width:clamp(339.15px,41.895vw,638.4px);
   aspect-ratio:19/20;
   border-radius:50% 0 0 50%;
   isolation:isolate;
@@ -39,7 +39,7 @@
   left:calc(-.65 * var(--portrait-ring));
   bottom:calc(-.12 * var(--portrait-ring));
   border:1px solid var(--line);
-  background:rgba(199,243,107,.45);
+  background:var(--lime);
   z-index:-1;
 }
 .hero-portrait::after{
@@ -64,13 +64,13 @@
   .hero{padding:64px 24px 96px;gap:96px;min-height:calc(100svh - 72px)}
   .hero-copy{order:1}
   .hero-portrait{
-    --portrait-ring:38.4px;
+    --portrait-ring:26.88px;
     order:2;
     position:relative;
     top:auto;
     right:auto;
     transform:none;
-    width:min(99.75vw,484.5px);
+    width:min(69.825vw,339.15px);
     justify-self:center;
   }
   .hero h1{font-size:clamp(3.4rem,12vw,5.7rem)}
