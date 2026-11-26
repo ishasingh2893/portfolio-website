@@ -6,25 +6,12 @@
   <meta name="description" content="BW to Color Converter — an image colorization tool by Isha Singh.">
   <title>BW to Color Converter · Isha</title>
   <style>
-    :root { color-scheme: light; font-family: DM Sans, Arial, sans-serif; }
     * { box-sizing: border-box; }
-    body { margin: 0; background: #f5f2e9; color: #183c32; }
-    header { height: 58px; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; border-bottom: 1px solid rgba(24,60,50,.15); }
-    a { color: inherit; }
-    .brand { font-family: Georgia, serif; font-size: 24px; text-decoration: none; }
-    .back { font-size: 13px; text-decoration: none; }
-    main { height: calc(100vh - 58px); min-height: 720px; padding: 14px; }
-    iframe { display: block; width: 100%; height: 100%; border: 1px solid rgba(24,60,50,.15); border-radius: 14px; background: #f7f4ec; }
-    @media (max-width: 640px) { header { padding: 0 16px; } main { padding: 8px; } }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #f7f4ec; }
+    iframe { display: block; width: 100%; height: 100vh; height: 100dvh; border: 0; background: #f7f4ec; }
   </style>
 </head>
 <body>
-  <header>
-    <a class="brand" href="/">Isha.</a>
-    <a class="back" href="/">Back to selected work ↗</a>
-  </header>
-  <main>
-    <iframe src="https://gc7f2xqrp3byz6uazabjln7iaq0ycnpe.lambda-url.us-east-2.on.aws/" title="BW to Color Converter" aria-label="BW to Color Converter" referrerpolicy="strict-origin-when-cross-origin" allow="clipboard-read; clipboard-write"></iframe>
-  </main>
+  <iframe src="https://gc7f2xqrp3byz6uazabjln7iaq0ycnpe.lambda-url.us-east-2.on.aws/" title="BW to Color Converter" aria-label="BW to Color Converter" referrerpolicy="strict-origin-when-cross-origin" allow="clipboard-read; clipboard-write"></iframe>
 </body>
 </html>
